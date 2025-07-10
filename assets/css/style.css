@@ -3,3 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
+.bg-orange {
+  background-color: rgb(255, 145, 0);
+}

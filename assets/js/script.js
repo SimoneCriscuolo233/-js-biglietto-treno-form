@@ -16,5 +16,5 @@ calcolaButton.addEventListener("click", (e) => {
     prezzoTotale *= 0.6; // sconto del 40%
   }
 
-  console.log(`Il prezzo totale del biglietto è: ${prezzoTotale.toFixed(2)} €`);
+  result.innerText = `Il prezzo totale del biglietto è: ${prezzoTotale.toFixed(2)} €`;
 });

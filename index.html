@@ -7,26 +7,55 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Document</title>
+  <title>Calcolo prezzo biglietto</title>
 </head>
 
 <body>
-  <h1>Calcolo prezzo del biglietto</h1>
-  <form action="">
-    <label for="km">numero di km:</label>
-    <input type="number" id="km" name="km" placeholder="Inserisci i km da percorrere" required>
-    <label for="eta">Et&aacute; del passeggero</label>
-    <select name="eta" id="age" required>
-      <option value="" disabled selected>Seleziona l'età</option>
-      <option value="minorenne">Minorenne</option>
-      <option value="maggiorenne">Maggiorenne</option>
-      <option value="over65">Over 65</option>
-    </select>
-    <button type="submit" id="submit-button">Calcola</button>
-    <button type="reset" id="cancel-button">Annulla</button>
-    <p id="result"></p>
-  </form>
+  <section class="">
+    <div class="container text-center py-4">
+      <h1>Calcolo prezzo del biglietto</h1>
+      <div class="card bg-orange py-5">
+        <form action="">
+          <div class="row">
+            <div class="col-4">
+              <label for="name" class="pb-3">Nome Cognome</label> <br>
+              <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome e cognome" required>
+            </div>
+            <div class="col-4">
+              <label for="km" class="pb-3">Numero di chilometri:</label> <br>
+              <input type="number" id="km" name="km" placeholder="Inserisci i km da percorrere" required>
+            </div>
+            <div class="col-4">
+              <label for="eta" class="pb-3">Et&aacute; del passeggero</label> <br>
+              <select name="eta" id="age" required>
+                <option value="" disabled selected>Seleziona l'età</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">Over 65</option>
+              </select>
+            </div>
+            <div class="col-12 pt-5">
+              <button type="submit" id="submit-button" class="btn btn-light">Calcola</button>
+              <button type="reset" id="cancel-button" class="btn btn-outline-light">Annulla</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container text-center py-4">
+      <h2>Il tuo biglietto</h2>
+      <div class="card">
+        <p id="result"></p>
 
+      </div>
+    </div>
+  </section>
+
+
+
+  <p id="result"></p>
 
 
 
