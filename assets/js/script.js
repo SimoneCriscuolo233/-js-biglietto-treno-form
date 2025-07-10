@@ -18,7 +18,7 @@ submitButton.addEventListener("click", (e) => {
   }
 
   result.innerText = `${prezzoTotale.toFixed(2)} €`;
-  document.getElementById("name-info").innerText = name.value;
+  document.getElementById("name-info").innerText = name.value.toUpperCase();
   document.getElementById("carriage").innerText = Math.floor(Math.random() * 20 + 1);
   document.getElementById("cp-code").innerText = Math.floor(Math.random() * 100000);
 });
