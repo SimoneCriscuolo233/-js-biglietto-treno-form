@@ -1,3 +1,4 @@
+const name = document.getElementById("name");
 const kmInput = document.getElementById("km");
 const ageSelect = document.getElementById("age");
 const calcolaButton = document.getElementById("submit-button");
@@ -16,5 +17,7 @@ calcolaButton.addEventListener("click", (e) => {
     prezzoTotale *= 0.6; // sconto del 40%
   }
 
-  result.innerText = `Il prezzo totale del biglietto è: ${prezzoTotale.toFixed(2)} €`;
+  result.innerText = `${prezzoTotale.toFixed(2)} €`;
 });
+
+
