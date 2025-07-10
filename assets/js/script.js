@@ -1,10 +1,10 @@
 const name = document.getElementById("name");
 const kmInput = document.getElementById("km");
 const ageSelect = document.getElementById("age");
-const calcolaButton = document.getElementById("submit-button");
+const submitButton = document.getElementById("submit-button");
 const result = document.getElementById("result");
 
-calcolaButton.addEventListener("click", (e) => {
+submitButton.addEventListener("click", (e) => {
   e.preventDefault();
   const km = parseFloat(kmInput.value);
   const age = ageSelect.value;
@@ -19,6 +19,8 @@ calcolaButton.addEventListener("click", (e) => {
 
   result.innerText = `${prezzoTotale.toFixed(2)} €`;
   document.getElementById("name-info").innerText = name.value;
+  document.getElementById("carriage").innerText = Math.floor(Math.random() * 20 + 1);
+  document.getElementById("cp-code").innerText = Math.floor(Math.random() * 100000);
 });
 
 
