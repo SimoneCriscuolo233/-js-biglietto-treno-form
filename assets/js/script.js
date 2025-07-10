@@ -3,7 +3,7 @@ const kmInput = document.getElementById("km");
 const ageSelect = document.getElementById("age");
 const submitButton = document.getElementById("submit-button");
 const result = document.getElementById("result");
-
+const resetButton = document.getElementById("cancel-button");
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
   const km = parseFloat(kmInput.value);
@@ -21,6 +21,12 @@ submitButton.addEventListener("click", (e) => {
   document.getElementById("name-info").innerText = name.value.toUpperCase();
   document.getElementById("carriage").innerText = Math.floor(Math.random() * 20 + 1);
   document.getElementById("cp-code").innerText = Math.floor(Math.random() * 100000);
+});
+resetButton.addEventListener("click", () => {
+  result.innerText = "";
+  document.getElementById("name-info").innerText = "";
+  document.getElementById("carriage").innerText = "";
+  document.getElementById("cp-code").innerText = "";
 });
 
 
