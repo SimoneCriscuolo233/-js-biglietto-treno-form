@@ -11,6 +11,25 @@
 </head>
 
 <body>
+  <h1>Calcolo prezzo del biglietto</h1>
+  <form action="">
+    <label for="km">numero di km:</label>
+    <input type="number" id="km" name="km" placeholder="Inserisci i km da percorrere" required>
+    <label for="eta">Et&aacute; del passeggero</label>
+    <select name="eta" id="age" required>
+      <option value="" disabled selected>Seleziona l'età</option>
+      <option value="minorenne">Minorenne</option>
+      <option value="maggiorenne">Maggiorenne</option>
+      <option value="over65">Over 65</option>
+    </select>
+    <button type="submit" id="submit-button">Calcola</button>
+    <button type="reset" id="cancel-button">Annulla</button>
+    <p id="result"></p>
+  </form>
+
+
+
+
   <script src="./assets/js/script.js"></script>
 </body>
 
