@@ -18,6 +18,7 @@ calcolaButton.addEventListener("click", (e) => {
   }
 
   result.innerText = `${prezzoTotale.toFixed(2)} €`;
+  document.getElementById("name-info").innerText = name.value;
 });
 
 
