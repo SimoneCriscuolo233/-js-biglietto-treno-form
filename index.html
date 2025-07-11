@@ -18,15 +18,17 @@
         <form action="">
           <div class="row">
             <div class="col-4">
-              <label for="name" class="pb-3">Nome Cognome</label> <br>
-              <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome e cognome" required>
+              <label for="name" class="pb-3 form-label">Nome Cognome</label> <br>
+              <input type="text" id="name" class="form-control" name="name"
+                placeholder="Inserisci il tuo nome e cognome" required>
             </div>
             <div class="col-4">
-              <label for="km" class="pb-3">Numero di chilometri:</label> <br>
-              <input type="number" id="km" name="km" placeholder="Inserisci i km da percorrere" required>
+              <label for="km" class="form-label pb-3">Numero di chilometri:</label> <br>
+              <input type="number" class="form-control" id="km" name="km" placeholder="Inserisci i km da percorrere"
+                required>
             </div>
             <div class="col-4">
-              <label for="eta" class="pb-3">Et&aacute; del passeggero</label> <br>
+              <label for="eta" class="form-select pb-3">Et&aacute; del passeggero</label> <br>
               <select name="eta" id="age" required>
                 <option value="" disabled selected>Seleziona l'età</option>
                 <option value="minorenne">Minorenne</option>
